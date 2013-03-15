@@ -1,0 +1,106 @@
+/* @override http://woopsdez.jp/800uranai/admin.css */
+
+.inner{
+	width: 960px;
+	margin: 0 auto;
+}
+
+header .inner{
+	position: relative;
+	text-align: left;
+}
+
+h1{
+	width: 480px;
+	margin: 20px 0 0 ;
+	padding: 0;
+	float: left;
+}
+
+h2{
+	font-size: 200%;
+}
+
+h3{
+	font-size: 180%;
+}
+
+.search{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	padding: 10px;
+	background: #f2b810;
+	border: 1px solid #f29f1f;
+	border-radius: 4px;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 30px auto;
+	padding-top: 30px;
+	clear: both;
+	overflow: hidden;
+}
+
+.left{
+	width: 400px;
+	float: left;
+}
+
+.left h2{
+	margin-bottom: 20px;
+	border-bottom:1px solid #000;
+}
+
+.left h2,
+.left dt{
+	text-align: left;
+}
+
+.left input,
+.left textarea{
+	width: 96%;
+	padding: 5px;
+	font-size: 120%;
+}
+
+.left textarea{
+	height: 10em;
+}
+
+.left p input{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.right{
+	width: 500px;
+	float: right;
+	padding: 20px;
+	text-align: left;
+	background: #ffd94c;
+	border-radius: 10px;
+}
+
+.right div{
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 2px solid #fff;
+}
+
+.right dt{
+	clear: left;
+	float: left;
+	width: 6em;
+	color: #ff5f8e;
+}
+.right dd{
+	float: left;
+}
+
+.right div p{
+	clear: both;
+	padding-top: 20px;
+}

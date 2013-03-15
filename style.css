@@ -1,0 +1,191 @@
+/* @override http://woopsdez.jp/800uranai/style.css */
+
+@charset "utf-8";
+
+/*---------------------------
+reset styles
+---------------------------*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {margin:0;padding:0;}table{border-collapse:collapse;
+border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;}
+
+/*---------------------------
+regular styles
+---------------------------*/
+
+html{
+	background: #d99c3b;
+}
+
+body{
+	margin: 0px auto;
+	text-align: center;	
+	background: #fec926;
+	font-family: "Hiragino Maru Gothic Pro","Lucida Grande", Lucida, Verdana, sans-serif;
+}
+
+article{
+	overflow: hidden;
+	max-width: 940px;
+	margin: 10px auto;
+}
+
+h1{
+	padding: 20px;
+}
+
+article h2{
+	margin: 10px 0;
+	font-size: 160%;
+}
+
+article p{
+	text-align: left;
+}
+
+footer{
+	margin: 0;
+	padding: 10px;
+	background: #d99c3b;
+}
+
+footer p{
+	display: inline-block;
+	color: #fff;
+}
+
+footer p:after{
+	content: "|";
+	padding: 10px;
+}
+
+footer a{
+	color: #fff;
+}
+
+#tagline{
+	margin-bottom: 20px;
+}
+
+.gototop{
+	position: relative;
+	clear: both;
+	margin-bottom: 40px;
+	padding-top: 20px;
+	border-bottom: dotted #d99c3b;;
+}
+
+.gototop a{
+	position: relative;
+	top: 16px;
+	display: block;
+	width: 10em;
+	margin: 0 auto 0px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 0;
+	background: #d99c3b;
+	border-radius: 10px;
+}
+
+.gototop a:hover{
+	background-color: #ce5d38;
+}
+
+/*---------------------------
+toppage
+---------------------------*/
+#today{
+	margin-bottom: 20px;
+	padding: 10px;
+	color: #fff;
+	font-size: 120%;
+	background: #e2b323;
+	border: 1px solid #ffe168;
+	border-radius: 10px;
+}
+
+ul.horoscopeList li{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+ul.horoscopeList li:hover{
+	opacity: 0.5;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+/*---------------------------
+result
+---------------------------*/
+body#result #no{
+	position: relative;
+	top: -90px;
+}
+
+#result section#myComment{
+	width: 70%;
+	float: left;
+}
+
+#result section#myComment p{
+	position: relative;
+	padding: 10px 10px;
+	background: #FFF;
+	border-radius: 10px;
+}
+
+#result section#myComment p:after{
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: 50%;
+	height: 0;
+	width: 0;
+	border: 10px solid transparent;
+	border-bottom: 10px solid #fff;
+}
+
+#candi{
+	width: 28%;
+	text-align: left;
+}
+
+#candi h2{
+	margin: 0;
+	color: #76292b;
+	font-size: 100%;
+}
+
+#candi p{
+	font-size: 150%;
+}
+
+#candi h2:before{
+	content: "★";
+}
+
+.right{
+	float: right;
+}
+
+/*---------------------------
+over1000display
+---------------------------*/
+
+/*---------------------------
+800display
+---------------------------*/
+
+/*---------------------------
+600display
+---------------------------*/
+
+/*---------------------------
+400display
+---------------------------*/
