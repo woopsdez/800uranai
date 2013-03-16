@@ -3,13 +3,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
 <title>人生なんて出来レース！強く生きよう８００（やおちょー）うらない</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="result">
     <header>
-<h1><img src="images/800uranai.png" width="480" height="81" alt="八百長うらない"></h1>
+<h1><img src="images/800uranai.png" width="100%" alt="八百長うらない"></h1>
 	<p id="tagline"><img src="images/tagline.png" width="217" height="19" alt="気持ちいい１日のために"></p>
 </header>
 
