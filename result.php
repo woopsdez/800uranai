@@ -16,22 +16,23 @@
 
 <article>
 	<h2 id="myRank">
-	<span id="seiza"><img src="images/<?php echo "$seizaName";?>_L.png" alt=""></span>
-	<span id="no"><img src="images/no0<?php echo "$no";?>.png" alt="<?php echo "$no";?>"></span>
+	<span id="seiza"><img src="images/<?php echo htmlspecialchars($seizaName);?>_L.png" alt=""></span>
+	<span id="no"><img src="images/no0<?php echo htmlspecialchars($no);?>.png" alt="<?php echo "$no";?>"></span>
 	</h2>
 
 <section id="myComment">
-  <p><?php echo "$hitokoto";?></p>
+  <p><?php echo htmlspecialchars($hitokoto);?></p>  
 </section>
+
 <div id="candi" class="right">
   <section id="myColor">
     <h2>ラッキーカラー</h2>
-    <p><?php echo "$color";?></p>
+    <p><?php echo htmlspecialchars($color);?></p>
   </section>
   
   <section id="myItem">
-    <h2>ラッキーアイテム</h2>
-    <p><?php echo "$item";?></p>
+    <h2>ラッキーカクテル</h2>
+    <p><?php echo htmlspecialchars($item);?></p>
   </section>
 </div>
 
@@ -41,9 +42,10 @@
 
 <section id="ranking">
 <h2>ランキング</h2>
-<pre>
-<?php print_r($ranking); ?>	
-</pre>	
+<ul>
+<?php echo ($html); ?>	
+</ul>	
+
 </section>
 
 	<footer>

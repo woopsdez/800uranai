@@ -25,6 +25,10 @@ h3{
 	font-size: 180%;
 }
 
+.gototop{
+	clear: both;
+}
+
 .search{
 	position: absolute;
 	top: 20px;
@@ -44,8 +48,8 @@ h3{
 }
 
 .left{
-	width: 400px;
-	float: left;
+	width: 600px;
+	margin: 0 auto;
 }
 
 .left h2{
@@ -75,15 +79,31 @@ h3{
 }
 
 .right{
-	width: 500px;
-	float: right;
+	overflow: hidden;
+	width: 960px;
+	margin: 30px auto;
 	padding: 20px;
 	text-align: left;
 	background: #ffd94c;
 	border-radius: 10px;
 }
 
-.right div{
+.right h3{
+	text-align: center;
+}
+
+.right h4{
+	font-size: 120%;
+}
+
+.right .box{
+	display: inline-block;
+	width: 300px;
+	font-size: 86%;
+	vertical-align: top;
+}
+
+.right div.box div{
 	overflow: hidden;
 	margin-bottom: 10px;
 	padding: 10px;
@@ -93,7 +113,7 @@ h3{
 .right dt{
 	clear: left;
 	float: left;
-	width: 6em;
+	width: 4em;
 	color: #ff5f8e;
 }
 .right dd{

@@ -27,7 +27,7 @@ if($hitokoto<>'' or $color<>'' or $item<>''){ //いずれかに引数が入っ�
 <body>
 <header>
 <div class="inner">
-  <h1><img src="../images/800uranai.png" width="480" height="81" alt="八百長うらない"></h1>
+  <h1><a href="../index.php"><img src="../images/800uranai.png" width="480" height="81" alt="八百長うらない"></a></h1>
 <form action="search.php" method="post">
 <section class="search"><p>
 	<select name="fld">
@@ -62,33 +62,46 @@ if($hitokoto<>'' or $color<>'' or $item<>''){ //いずれかに引数が入っ�
 	<h3>最近登録した項目 10件</h3>
 	<?php
 	//登録したレコード一覧を表示
-	$sql = "select * from uranai order by renban desc limit 10"; 
-	$result = mysql_query($sql); //取得した要素をresultに格納
-	$rows = mysql_num_rows($result); //実行結果の行数を返す
-		if($rows == 0){
-			echo "<p>該当データがありません。</p>";
-		}
-		else{
-			while($row = mysql_fetch_array($result))
-			{
-			echo "
-			<div>
-				<dl>
-					<dt>番号</dt><dd>".$row["renban"]."</dd>
-					<dt>ひとこと</dt><dd>".htmlspecialchars($row["hitokoto"])."</dd>
-					<dt>カラー</dt><dd>".htmlspecialchars($row["color"])."</dd>
-					<dt>アイテム</dt><dd>".htmlspecialchars($row["item"])."</dd>
-				</dl>
-				<p>
-					<a href='edit.php?id=".$row["renban"]."'>修正する</a> | 
-					<a href='delete.php?id=".$row["renban"]."'>削除する</a>
-				</p>
-			</div>";
-		}
-	}
-	?>
-	<a href="list.php">もっと見る</a>
+	function dbcall($table){
+			$sql = "select * from ".$table." order by renban desc limit 10"; 
+			$result = mysql_query($sql); //取得した要素をresultに格納
+			$rows = mysql_num_rows($result); //実行結果の行数を返す
+			if($rows == 0){
+				echo "<p>該当データがありません。</p>";
+				}
+				else{
+					while($row = mysql_fetch_array($result))
+					{
+						echo "
+							<div>				
+								<dl>
+									<dt>番号</dt><dd>".$row["renban"]."</dd>
+									<dt>カラー</dt><dd>".htmlspecialchars($row[$table])."</dd>
+								</dl>
+								
+								<p>
+									<a href='edit.php?id=".$row["renban"]."'>修正する</a> | 
+									<a href='delete.php?id=".$row["renban"]."'>削除する</a>
+								</p>
+							</div>";
+					 }
+				}
+			};
+	?>	
+	<div class="box" id="hitokoto">	
+	<h4>ヒトコト</h4>
+	<?php dbcall("hitokoto"); ?>
+	</div>
+	<div class="box" id="color">	
+	<h4>カラー</h4>
+	<?php dbcall("color"); ?>
+	</div>
+	<div class="box" id="item">	
+	<h4>カクテル</h4>
+	<?php dbcall("item"); ?>
+	</div>
 </section>
+	<p class="gototop"><a href="list.php">もっと見る</a></p>
 </div>
 	
 <footer>

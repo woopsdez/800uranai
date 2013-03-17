@@ -50,6 +50,10 @@ footer{
 	background: #d99c3b;
 }
 
+footer .inner{
+	padding-top: 30px;
+}
+
 footer p{
 	display: inline-block;
 	color: #fff;
@@ -73,7 +77,6 @@ footer a{
 	position: relative;
 	clear: both;
 	margin-bottom: 40px;
-	padding-top: 20px;
 	border-bottom: dotted #d99c3b;;
 }
 
@@ -133,6 +136,10 @@ body#result #no{
 	top: -90px;
 }
 
+#result #tagline{
+	margin-bottom: 0;
+}
+
 #result section#myComment{
 	width: 70%;
 	float: left;
@@ -173,6 +180,19 @@ body#result #no{
 
 #candi h2:before{
 	content: "★";
+}
+
+#ranking ul{
+	overflow: hidden;
+	width: 960px;
+	margin: 0 auto;
+	margin-bottom: -30px;
+	text-align: center;
+}
+
+#ranking ul li{
+	width: 75px;
+	display: inline-block;
 }
 
 .right{
@@ -291,10 +311,6 @@ over1000display
 	margin: 0 auto 10px;
 	display: block;
 	}
-	
-	#result #tagline{
-	margin-bottom: 0;
-}
 	
 	#myRank{
 	display: inline;
