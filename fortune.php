@@ -51,8 +51,9 @@ $no=rand(1,6);
 ////////////////////////////////////
 
 //データベースにアクセス
-mysql_connect('mysql106.heteml.jp','_800uranai','uso800');
-mysql_select_db('_800uranai');
+require_once("admin/config.php");
+mysql_connect($hostName,$userName,$password);
+mysql_select_db($database);
 
 ////////////////////////////////////		
 
@@ -88,14 +89,6 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
 $key = array_rand($item);
 $item = $item[$key];
 
-
-//あとで
-//$nodata = "データないよ＞＜"; //データがない場合
-//if(!$item){
-//	$item == $nodata
-//} 
-
-
 ////////////////////////////////////
 
 //他の星座ランキング
@@ -111,7 +104,7 @@ shuffle($seizaAry);
 array_splice($seizaAry,($no-1),0,$selfSeiza);
 
 foreach( $seizaAry as $key=>$val){	
-	$html .= "<li><a href=#><img src=images/".$val."_S.png></a></li>\n";
+	$html .= "<li><a href=result.php?id=".$val."><img src=images/".$val."_S.png></a></li>\n";
 };
 
 

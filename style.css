@@ -24,22 +24,24 @@ body{
 	font-family: "Hiragino Maru Gothic Pro","Lucida Grande", Lucida, Verdana, sans-serif;
 }
 
-article{
+.article{
 	overflow: hidden;
 	max-width: 940px;
 	margin: 10px auto;
 }
 
 h1{
-	padding: 20px;
+	width: 480px;
+	margin: 0 auto;
+	padding: 10px;
 }
 
-article h2{
+.article h2{
 	margin: 10px 0;
 	font-size: 160%;
 }
 
-article p{
+.article p{
 	margin: 10px;
 	text-align: left;
 }
@@ -98,6 +100,11 @@ footer a{
 	background-color: #ce5d38;
 }
 
+#socialButton li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
 /*---------------------------
 toppage
 ---------------------------*/
@@ -131,9 +138,9 @@ ul.horoscopeList li:hover{
 /*---------------------------
 result
 ---------------------------*/
-body#result #no{
+#result #no{
 	position: relative;
-	top: -90px;
+	top: -50px;
 }
 
 #result #tagline{
@@ -141,13 +148,14 @@ body#result #no{
 }
 
 #result section#myComment{
-	width: 70%;
+	width: 60%;
 	float: left;
 }
 
 #result section#myComment p{
+	min-height: 8em;
 	position: relative;
-	padding: 10px 10px;
+	padding: 20px;
 	background: #FFF;
 	border-radius: 10px;
 }
@@ -164,8 +172,13 @@ body#result #no{
 }
 
 #candi{
-	width: 28%;
+	width: 38%;
+	margin-top: 10px;
+	padding: 20px 0;
 	text-align: left;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-radius: 0 10px;
 }
 
 #candi h2{
@@ -184,7 +197,6 @@ body#result #no{
 
 #ranking ul{
 	overflow: hidden;
-	width: 960px;
 	margin: 0 auto;
 	margin-bottom: -30px;
 	text-align: center;
@@ -200,55 +212,20 @@ body#result #no{
 }
 
 /*---------------------------
-over1000display
----------------------------*/
-
-@media screen and (min-width: 960px) {
-	h1{
-	width: 480px;
-	margin: 0 auto;
-	padding: 10px 0;
-	}
-	
-	article{
-	width: 960px;
-	margin: 0 auto;
-	}
-	
-	ul.horoscopeList{
-	margin-bottom: 30px;
-}
-	
-	ul.horoscopeList li{
-	overflow: hidden;
-	width: 100%;
-	height: 100p%
-	margin: 0 auto 10px;
-	display: inline;
-	}
-}
-
-/*---------------------------
 800display
 ---------------------------*/
 
 @media screen and (max-width: 800px) {	
-	article{
-	padding: 10px;
+	#result #seiza img{
+		width: 45%;
 	}
-	
-	h1{
-	width: 480px;
-	margin: 0 auto;
-	padding: 10px 0;
+	#result #no img{
+		width: 40%;
 	}
-	
-	ul.horoscopeList li{
-	overflow: hidden;
-	width: 100%;
-	height: 100p%
-	margin: 0 auto 10px;
-	display: inline;
+	#candi{
+	margin-top: 0;
+	padding: 0;
+	border: none;
 	}
 }
 
@@ -257,22 +234,11 @@ over1000display
 ---------------------------*/
 
 @media screen and (max-width: 600px) {
-	article{
-	padding: 10px;
-	}
-	
 	h1{
-	width: 480px;
-	margin: 0 auto;
-	padding: 10px 0;
+		width: 90%;
 	}
-	
-	ul.horoscopeList li{
-	overflow: hidden;
-	width: 100%;
-	height: 100p%
-	margin: 0 auto 10px;
-	display: inline;
+	.article #candi p{
+		font-size: 100%;
 	}
 }
 
@@ -281,110 +247,19 @@ over1000display
 ---------------------------*/
 
 @media screen and (max-width: 400px) {
-	body{
+	h1 img{
+		width: 90%;
+	}
+	#result #no{
+		position: relative;
+		top: 0px;
+	}
+	#result section#myComment{
 	width: 100%;
-	margin: 0;
-	padding: 0px;
+	clear: both;
 	}
-	
-	article{
-	width: 90%;
+	#candi.right{
+		width: 90%;
+		clear: both;
 	}
-	
-	h1{
-	width: 90%;
-	margin: 0 auto;
-	padding: 10px 0;
-	}
-	
-	article h2{
-	margin: 10px;
-	text-align: left;
-	}
-	
-	#today{
-	width: 90%;
-	}
-	
-	ul.horoscopeList li{
-	width: 300px;
-	margin: 0 auto 10px;
-	display: block;
-	}
-	
-	#myRank{
-	display: inline;
-}
-	
-	footer a:first-child:after{
-	content: none;
-	}
-
-body#result #seiza,
-body#result #no{
-	position: inherit;
-	top: 0;
-	left: 0;
-	display: inline;
-}
-
-body#result #seiza img{
-	width: 160px;
-}
-
-body#result #no{
-	position: relative;
-	top: -40px;
-}
-
-body#result #no img{
-	width: 100px;
-}
-
-#result section#myComment{
-	width: 100%;
-	clear: left;
-}
-
-#result section#myComment p{
-	position: relative;
-	padding: 10px 10px;
-	font-size: 150%;
-	background: #FFF;
-	border-radius: 10px;
-}
-
-#result section#myComment p:after{
-	content: "";
-	position: absolute;
-	top: -20px;
-	left: 50%;
-	height: 0;
-	width: 0;
-	border: 10px solid transparent;
-	border-bottom: 10px solid #fff;
-}
-
-#candi{
-	width: 100%;
-	text-align: left;
-}
-
-#candi h2{
-	margin: 0;
-	color: #76292b;
-	font-size: 120%;
-}
-
-#candi p{
-	font-size: 150%;
-}
-
-#candi h2:before{
-	content: "★";
-}
-
-.right{
-	clear: right;
-}
 }
