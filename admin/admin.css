@@ -1,0 +1,144 @@
+.inner{
+	width: 960px;
+	margin: 0 auto;
+}
+
+header .inner{
+	position: relative;
+	text-align: left;
+}
+
+h1{
+	width: 480px;
+	margin: 20px 0 0 ;
+	padding: 0;
+	float: left;
+}
+
+h2{
+	font-size: 200%;
+}
+
+h3{
+	font-size: 180%;
+}
+
+textarea{
+	width: 90%;
+  height: 10em;
+  font-size: 100%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.box{
+	margin: 10px auto;
+	padding: 10px;
+	text-align: left;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.gototop{
+	display: block;
+}
+
+.result{
+	margin: 10px;
+	padding: 10px;
+	color: red;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.search{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	padding: 10px;
+	background: #f2b810;
+	border: 1px solid #f29f1f;
+	border-radius: 4px;
+}
+
+.wrapper{
+	width: 960px;
+	margin: 30px auto;
+	padding-top: 30px;
+	clear: both;
+	overflow: hidden;
+}
+
+.left{
+	float: left;
+	width: 300px;
+	margin: 0 auto;
+}
+
+.right{
+	float: right;
+	width: 600px;
+	margin: 30px auto;
+	padding: 20px;
+	text-align: left;
+	background: #ffd94c;
+	border-radius: 10px;
+}
+
+.left h2{
+	margin-bottom: 20px;
+	border-bottom:1px solid #000;
+}
+
+.left h2,
+.left dt{
+	text-align: left;
+}
+
+.left input,
+.left textarea{
+	width: 96%;
+	padding: 5px;
+	font-size: 120%;
+}
+
+.left p input{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.right h3{
+	text-align: center;
+}
+
+.right h4{
+	font-size: 120%;
+}
+
+.right div.box div{
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-bottom: 2px solid #fff;
+}
+
+.right dt{
+	color: #ff5f8e;
+}
+.right dd{
+}
+
+.right div p{
+	padding-top: 20px;
+}
+
+.card{
+  display: inline;
+}
+
+nav{
+	margin-top: 20px;
+	padding-top: 20px;
+	text-align: center;
+	border-top: 1px solid #efefef;
+}
